@@ -23,6 +23,7 @@ jobs:
         uses: actions-rs/cargo@v1
         env:
           CC: aarch64-linux-gnu-gcc
+          TARGET: aarch64-unknown-linux-gnu
         with:
           command: build
           args: --release --target=aarch64-unknown-linux-gnu
